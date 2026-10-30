@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Electric Vehicles</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+</head>
+
+<body class="font-texto text-tinta bg-white">
+
+  <header class="sticky top-0 z-50 bg-white h-20">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 h-20 flex items-center justify-between">
+
+      <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+
+      <!-- Menu -->
+      <nav id="menu" class="hidden lg:flex gap-12 font-titulo text-xl tracking-wide
+                            max-lg:absolute max-lg:top-20 max-lg:left-0 max-lg:right-0 max-lg:bg-white
+                            max-lg:flex-col max-lg:gap-4 max-lg:p-5 max-lg:border-b">
+        <a href="#models" class="hover:text-vinci transition">MODELOS</a>
+        <a href="#services" class="hover:text-vinci transition">SERVIÇOS</a>
+        <button id="botaoVeiculos" class="hover:text-vinci transition text-left">VEÍCULOS</button>
+        <a href="teste-drive.html" class="hover:text-vinci transition">TEST DRIVE</a>
+        <a href="#contact" class="hover:text-vinci transition">CONTATO</a>
+      </nav>
+
+      <button id="botaoMenu" class="lg:hidden text-3xl" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- Megamen  -->
+    <div id="megamenu" class="hidden absolute top-20 left-0 right-0 bg-white border-y border-gray-300 shadow-xl max-h-[calc(100vh-80px)] overflow-auto">
+      <div class="max-w-[1440px] mx-auto px-5 md:px-10 py-10 grid lg:grid-cols-[1fr_320px] gap-10">
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div class="text-center">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V1</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V2</h3>
+            <a href="modelV2.html" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V3</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V4</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V5</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V6</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+        </div>
+
+        <div class="lg:border-l lg:pl-8">
+          <p class="font-titulo text-lg tracking-widest text-gray-500 border-b pb-3 mb-4">NAVEGUE</p>
+          <ul class="font-titulo text-2xl tracking-wider space-y-2">
+            <li><a href="#" class="hover:text-vinci">OFERTAS</a></li>
+            <li><a href="teste-drive.html" class="hover:text-vinci">TEST DRIVE</a></li>
+            <li><a href="#" class="hover:text-vinci">LOJAS</a></li>
+            <li><a href="#services" class="hover:text-vinci">SERVIÇOS</a></li>
+            <li><a href="#" class="hover:text-vinci">SAC</a></li>
+            <li><a href="#" class="hover:text-vinci">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--  Hero   -->
+    <section class="relative min-h-[520px] md:min-h-[637px] flex items-end">
+      <img src="assets/carros/hero.png" alt="VINCI Model V3" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-y-0 left-0 w-full md:w-3/4 bg-gradient-to-r from-black/95 to-transparent"></div>
+
+      <div class="relative max-w-[1440px] mx-auto w-full px-5 md:px-10 pb-16 text-white">
+        <h1 class="font-titulo text-5xl md:text-7xl">VINCI MODEL V3</h1>
+        <p class="max-w-[706px] text-xl mt-5 mb-10">Conheça a terceira geração do elétrico que está transformando o mercado. Mais espaço, maior alcance de bateria e conectividade total em todos os seus caminhos.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#models" class="bg-vinci hover:bg-red-700 text-white text-center rounded px-12 py-3 min-w-[240px] font-titulo text-xl uppercase tracking-wide transition">MODELOS</a>
+          <a href="teste-drive.html" class="border border-white text-white hover:bg-white hover:text-tinta text-center rounded px-12 py-3 min-w-[240px] font-titulo text-xl uppercase tracking-wide transition">TEST DRIVE</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="max-w-[1440px] mx-auto px-5 md:px-10 py-16 grid lg:grid-cols-2 gap-16 lg:gap-24">
+
+      <article id="model-v2">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 lg:min-h-[116px]">
+          <h2 class="font-titulo text-4xl md:text-[42px] leading-none">VINCI<br />MODEL V2</h2>
+          <ul class="font-titulo text-lg space-y-1">
+            <li><span class="text-gray-500">Potência:</span> 300 cavalos</li>
+            <li><span class="text-gray-500">Autonomia:</span> 500km por carga</li>
+            <li><span class="text-gray-500">Peso:</span> 1.500 kg</li>
+            <li><span class="text-gray-500">Tecnologia:</span> GPS e telemática</li>
+          </ul>
+        </div>
+
+        <a href="modelV2.html"><img src="assets/carros/model-v3.png" alt="VINCI MODEL V2" class="w-full aspect-[529/425] object-contain mt-4" /></a>
+
+        <div class="flex justify-between items-center font-titulo text-xl mt-4">
+          <p class="text-gray-500">A SUV mais robusta da categoria</p>
+          <a href="modelV2.html" class="underline hover:text-vinci">CONHEÇA →</a>
+        </div>
+      </article>
+
+      <article id="model-v1">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 lg:min-h-[116px]">
+          <h2 class="font-titulo text-4xl md:text-[42px] leading-none">VINCI<br />MODEL V1</h2>
+          <ul class="font-titulo text-lg space-y-1">
+            <li><span class="text-gray-500">Potência:</span> 250 cv</li>
+            <li><span class="text-gray-500">Autonomia:</span> 450 km</li>
+            <li><span class="text-gray-500">Tecnologia:</span> 100% elétrica</li>
+          </ul>
+        </div>
+
+        <a href="#"><img src="assets/carros/model-v1.png" alt="VINCI MODEL V1" class="w-full aspect-[529/425] object-contain mt-4" /></a>
+
+        <div class="flex justify-between items-center font-titulo text-xl mt-4">
+          <p class="text-gray-500">A SUV mais inovadora da categoria</p>
+          <a href="#" class="underline hover:text-vinci">CONHEÇA →</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- 1 Banner carro na pista  -->
+    <img src="assets/carros/road.png" alt="VINCI na estrada" class="w-full h-[320px] md:h-[593px] object-cover" />
+
+    <!--  Servicos -->
+    <section id="services" class="max-w-[1440px] mx-auto px-5 md:px-10 py-16">
+
+      <a href="teste-drive.html" class="flex justify-between items-center py-5 border-b border-gray-200 font-titulo text-4xl md:text-7xl hover:text-vinci hover:pl-4 transition-all">
+        <span>AGENDE UM TEST DRIVE</span><span class="text-3xl">→</span>
+      </a>
+
+      <a href="#" class="flex justify-between items-center py-5 border-b border-gray-200 font-titulo text-4xl md:text-7xl hover:text-vinci hover:pl-4 transition-all">
+        <span>VEJA OFERTAS</span><span class="text-3xl">→</span>
+      </a>
+
+      <a href="https://www.google.com/maps/search/lojas+de+carros/" class="flex justify-between items-center py-5 border-b border-gray-200 font-titulo text-4xl md:text-7xl hover:text-vinci hover:pl-4 transition-all">
+        <span>ENCONTRE UMA LOJA</span><span class="text-3xl">→</span>
+      </a>
+    </section>
+
+    
+    <img src="assets/carros/road-car.png" alt="VINCI elétrico" class="w-full h-[320px] md:h-[593px] object-cover" />
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contact" class="border-t border-gray-400 mt-16 pt-16 pb-10">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 grid grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10">
+
+      <div class="col-span-2 md:col-span-1 flex flex-col justify-between gap-10">
+        <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+        <p class="font-titulo text-lg text-gray-500">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SOBRE</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">A marca</a></li>
+          <li><a href="#" class="hover:text-vinci">História</a></li>
+          <li><a href="#" class="hover:text-vinci">Qualidade</a></li>
+          <li><a href="https://www.google.com/maps/search/lojas+de+carros/" class="hover:text-vinci">Onde estamos</a></li>
+          <li><a href="#" class="hover:text-vinci">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">CONTATO</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Fale conosco</a></li>
+          <li><a href="#" class="hover:text-vinci">Atendimento</a></li>
+          <li><a href="#" class="hover:text-vinci">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SAC</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Canais oficiais</a></li>
+          <li><a href="#" class="hover:text-vinci">Redes sociais</a></li>
+          <li><a href="#" class="hover:text-vinci">Suporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
