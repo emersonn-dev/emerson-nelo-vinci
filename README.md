@@ -62,5 +62,5 @@ O comando `build` lê `src/input.css` e gera de novo o `assets/css/style.css`.
 
 ## Autor
 
-**Emerson Nelo Aorim**
+**Emerson Nelo Amorim**
 Graduação em Sistemas de Informação — atividade do curso Figma Turbo
